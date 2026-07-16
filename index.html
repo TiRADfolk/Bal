@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tirad - Groupe de Musique Folk</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./tailwind.config.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .font-serif { font-family: 'Playfair Display', Georgia, serif; }
+    </style>
+</head>
+<body class="bg-[#FAF6EE] text-[#3D251E] min-h-screen flex flex-col pt-20">
+
+    <header class="fixed top-0 left-0 right-0 bg-[#FAF6EE]/90 backdrop-blur-md border-b border-[#1E352F]/10 z-50">
+        <div class="max-w-6xl mx-auto px-4 h-20 flex items-center justify-between">
+            <a href="#" class="font-serif text-3xl font-bold text-[#1E352F] tracking-wide">Tirad</a>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#accueil" class="font-medium text-[#1E352F]/80 hover:text-[#D36B4F] transition-colors">Accueil</a>
+                <a href="#agenda" class="font-medium text-[#1E352F]/80 hover:text-[#D36B4F] transition-colors">Agenda</a>
+                <a href="#medias" class="font-medium text-[#1E352F]/80 hover:text-[#D36B4F] transition-colors">Médias</a>
+                <a href="#contact" class="font-medium text-[#1E352F]/80 hover:text-[#D36B4F] transition-colors">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <section id="accueil" class="relative h-[60vh] bg-[#1E352F] flex items-center justify-center text-center px-4 overflow-hidden">
+        <div class="absolute inset-0 bg-cover bg-center opacity-30 mix-blend-overlay" style="background-image: url('https://images.unsplash.com/photo-1511192336575-5a79af67a629?q=80&w=1600');"></div>
+        <div class="relative z-10 max-w-3xl">
+            <h1 class="font-serif text-6xl md:text-8xl font-bold text-[#FAF6EE] mb-4">Tirad</h1>
+            <p class="font-serif italic text-xl md:text-2xl text-[#FAF6EE]/90 mb-8">La chaleur du folk, le souffle de la danse</p>
+            <a href="#agenda" class="bg-[#D36B4F] text-[#FAF6EE] px-8 py-3 rounded-md font-semibold hover:bg-[#D36B4F]/90 transition-all shadow-md">Voir nos dates</a>
+        </div>
+    </section>
+
+    <section class="max-w-6xl mx-auto px-4 py-16 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <div>
+            <span class="text-[#D36B4F] font-semibold tracking-wider uppercase text-sm">Actualités</span>
+            <h2 class="font-serif text-4xl text-[#1E352F] mt-2 mb-6">Nouvel Album en préparation !</h2>
+            <p class="text-[#3D251E]/80 leading-relaxed mb-6">
+                Inspiré des parquets de bal et de la douceur des sous-bois, notre prochain album retrace nos aventures de l'été. Préparez-vous à voyager entre mélodies envoûtantes et rythmiques endiablées.
+            </p>
+        </div>
+        <div class="bg-[#1E352F]/5 p-8 rounded-2xl border border-[#1E352F]/10">
+            <h3 class="font-serif text-2xl text-[#1E352F] mb-4">Qui sommes-nous ?</h3>
+            <p class="text-[#3D251E]/80 leading-relaxed">
+                Tirad, c’est la rencontre de musiciens passionnés par le patrimoine folk et les musiques à danser. Violon, accordéon diatonique, guitare et flûte se mêlent pour créer un son à la fois ancré dans la tradition et moderne.
+            </p>
+        </div>
+    </section>
+
+    <section id="agenda" class="bg-[#1E352F]/5 py-16">
+        <div class="max-w-4xl mx-auto px-4">
+            <h2 class="font-serif text-5xl text-[#1E352F] mb-4 text-center">Notre Agenda</h2>
+            <p class="text-center text-[#3D251E]/70 mb-12">Venez partager un moment de danse et d'écoute.</p>
+
+            <div class="space-y-6">
+                <div class="bg-white rounded-xl p-6 shadow-sm border border-[#1E352F]/5 flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+                    <div>
+                        <span class="text-sm font-semibold text-[#D36B4F]">15 Mai 2026</span>
+                        <h3 class="font-serif text-xl text-[#1E352F] font-bold mt-1">Le Grand Bal de Printemps</h3>
+                        <p class="text-sm text-[#3D251E]/60">Gennetines (03)</p>
+                    </div>
+                    <button class="bg-[#1E352F] text-[#FAF6EE] px-4 py-2 rounded text-sm hover:bg-[#1E352F]/90">Billetterie</button>
+                </div>
+                <div class="bg-white rounded-xl p-6 shadow-sm border border-[#1E352F]/5 flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+                    <div>
+                        <span class="text-sm font-semibold text-[#D36B4F]">24 Juin 2026</span>
+                        <h3 class="font-serif text-xl text-[#1E352F] font-bold mt-1">Festival Folk en Forêt</h3>
+                        <p class="text-sm text-[#3D251E]/60">Compiègne (60)</p>
+                    </div>
+                    <button class="bg-[#1E352F] text-[#FAF6EE] px-4 py-2 rounded text-sm hover:bg-[#1E352F]/90">Billetterie</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="medias" class="max-w-6xl mx-auto px-4 py-16 space-y-12">
+        <h2 class="font-serif text-5xl text-[#1E352F] text-center">Médias</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <img src="https://images.unsplash.com/photo-1465847899084-d164df4dedc6?q=80&w=800" class="rounded-xl object-cover h-64 w-full shadow-md" alt="Musique 1">
+            <img src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?q=80&w=800" class="rounded-xl object-cover h-64 w-full shadow-md" alt="Musique 2">
+            <img src="https://images.unsplash.com/photo-1501386761578-eac5c94b800a?q=80&w=800" class="rounded-xl object-cover h-64 w-full shadow-md" alt="Musique 3">
+        </div>
+    </section>
+
+    <section id="contact" class="bg-white border-t border-[#1E352F]/10 py-16">
+        <div class="max-w-4xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div>
+                <h2 class="font-serif text-5xl text-[#1E352F] mb-6">Contactez-nous</h2>
+                <p class="text-[#3D251E]/80 mb-6">Vous souhaitez programmer Tirad pour un bal folk ou un concert ?</p>
+                <p class="text-sm text-[#3D251E]/80"><strong>📧 Email :</strong> contact@tirad-folk.fr</p>
+            </div>
+            <form class="space-y-4" onsubmit="event.preventDefault(); alert('Message envoyé ! (Simulation)');">
+                <input type="text" placeholder="Votre Nom" required class="w-full p-3 rounded border border-[#1E352F]/10 bg-[#FAF6EE] text-sm">
+                <input type="email" placeholder="Votre Email" required class="w-full p-3 rounded border border-[#1E352F]/10 bg-[#FAF6EE] text-sm">
+                <textarea placeholder="Votre Message" rows="4" required class="w-full p-3 rounded border border-[#1E352F]/10 bg-[#FAF6EE] text-sm"></textarea>
+                <button type="submit" class="w-full bg-[#D36B4F] text-[#FAF6EE] py-3 rounded font-semibold">Envoyer</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="bg-[#1E352F] text-[#FAF6EE]/90 py-10 mt-auto text-center text-sm">
+        <p>© 2026 Tirad. Tous droits réservés.</p>
+    </footer>
+
+</body>
+</html>
